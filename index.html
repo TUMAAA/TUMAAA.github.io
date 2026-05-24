@@ -23,20 +23,21 @@
 
   <section class="term-body">
     <pre class="ascii" aria-hidden="true">
-   ___   _   _    _    ___    ___ ___    _ _   _ _   _    _   ___ __  __ ___
-  / __| /_\ | \  /_\  / __|  | _ \ _ \  /_| | (_) \ | |  /_\ |_ _|  \/  |_ _|
- | (__ / _ \| |\/ _ \ \__ \  |  _/   / / _ \ |/| |  \| | / _ \ | || |\/| || |
-  \___/_/ \_\_|/_/ \_\|___/  |_| |_|_\/_/ \_\__|_|_|\_| /_/ \_\___|_|  |_|___|
+   _                    _   _     _  _           _       _
+  /_\  _ _  __ _ ___   /_\ | |___| \| |_  _ __ _(_)_ __ (_)
+ / _ \| ' \/ _` (_-&lt;  / _ \| |___| .` | || / _` | | '  \| |
+/_/ \_\_||_\__,_/__/ /_/ \_\_|   |_|\_|\_,_\__,_|_|_|_|_|_|
 </pre>
+    <p class="ar-name" dir="rtl" lang="ar">أنس النعيمين</p>
 
     <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~</span>$ <span id="typed"></span><span class="cursor">▌</span></p>
 
     <pre id="whoami-output" class="output hidden">
-<span class="k">name</span>        : Anas Al-Nuaimi
-<span class="k">role</span>        : ML Researcher / Engineer
-<span class="k">domains</span>     : computer vision · generative AI · robotics · MLOps
+<span class="k">name</span>        : Anas Al-Nuaimi  ·  <span class="ar-inline" dir="rtl" lang="ar">أنس النعيمين</span>
+<span class="k">role</span>        : Research Associate → hardcore Software/Data Engineer → Scientist
+<span class="k">domains</span>     : MLOps · (3D) computer vision · generative AI
 <span class="k">stack</span>       : Python · PyTorch · CUDA · Airflow · SLURM · C++
-<span class="k">currently</span>   : building large-scale image-gen pipelines @ Fanar
+<span class="k">currently</span>   : architecting the MLOps of Fanar Arabic GenAI
 <span class="k">contact</span>     : <a href="mailto:analnuaimi@hbku.edu.qa">analnuaimi@hbku.edu.qa</a>
 
 <span class="k">socials</span>     :
@@ -59,44 +60,124 @@
 <pre class="md output">
 <span class="h"># About</span>
 
-I build systems that turn pixels into intelligence — and intelligence back into
-pixels. My day-to-day is somewhere between research code, GPU clusters, and
-production data pipelines.
+In my day-to-day business I am somewhere between research code and production
+data pipelines — mostly enjoying Software Engineering as a craft while it
+has not been killed yet through our unwavering quest to make ourselves
+Skynet's prey! Prior to that I was concerned proving to my advisor I
+deserve a PhD through working on 3D Computer Vision.
 
 <span class="h">## what I work on</span>
 
-- <span class="b">Generative models</span> — fine-tuning &amp; deploying diffusion models (FLUX, SD, SDXL)
-  with LoRA, evaluating them with VLM judges, and shipping the whole loop on
-  SLURM + Airflow.
-- <span class="b">Computer vision &amp; robotics</span> — past life in dense visual odometry, SLAM,
-  and 3D reconstruction. I still write a lot of CUDA when no one is looking.
-- <span class="b">MLOps at scale</span> — content-addressed dataset stores, deduplication,
-  reproducible runs, and pipelines that don&apos;t fall over at 3 a.m.
+- <span class="b">MLOps for Fanar</span> — building MLOps solutions for Fanar Arabic GenAI,
+  addressing Effective Data Management, Data Analytics, Data-Training-
+  Deployment Pipelines, and production-grade code.
+- <span class="b">(3D) Computer Vision</span> — worked on the alignment problem of
+  partially-overlapping 3D point clouds during my PhD.
+- <span class="b">Humanitarian AI</span> — Computer Vision for remote-sensing data for
+  disaster analysis.
 
 <span class="h">## philosophy</span>
 
-> If you can&apos;t reproduce it, you didn&apos;t do it.
+> Only reviewed code is good code.
 
-I like small, sharp tools, plain text, and READMEs that respect your time.
+I like clear terminology, people who look at code as the outcome of
+<span class="b">Software Engineering</span> — not "coding" or "programming" — and people who
+don't consider science a source for fame but rather a mission to deliver
+societal impact.
 </pre>
     </section>
 
     <section id="publications" class="block hidden" data-cmd="ls publications/">
-      <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~/publications</span>$ ls -la</p>
-      <p class="badges">
-        <img alt="citations" src="https://img.shields.io/badge/dynamic/json?label=citations&query=%24.citations&url=https%3A%2F%2Fapi.allorigins.win%2Fget%3Furl%3Dhttps%253A%252F%252Fscholar.google.com%252Fcitations%253Fuser%253DAPUSJ6UAAAAJ&color=00ff88&style=flat-square&logo=googlescholar" onerror="this.style.display='none'"/>
-        <a href="https://scholar.google.com/citations?user=APUSJ6UAAAAJ&hl=en" target="_blank" rel="noopener"><img alt="google scholar" src="https://img.shields.io/badge/Google%20Scholar-APUSJ6UAAAAJ-00ff88?style=flat-square&logo=googlescholar&logoColor=black"/></a>
-      </p>
-      <pre id="publications-list" class="output">
-<span class="muted">// Google Scholar blocks CORS, so the live list lives on the profile itself.</span>
-<span class="muted">// Hit the badge above to open the canonical, always-current list.</span>
+      <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~/publications</span>$ ls -la | sort -k citations -r</p>
+      <div class="output">
+        <div class="pub-meta">
+<span class="k">citations</span>   : <span class="b">487</span>
+<span class="k">h-index</span>     : <span class="b">10</span>
+<span class="k">i10-index</span>   : <span class="b">10</span>
+<span class="muted">// canonical source:</span> <a href="https://scholar.google.com/citations?user=APUSJ6UAAAAJ&amp;hl=en" target="_blank" rel="noopener">scholar.google.com/citations?user=APUSJ6UAAAAJ</a>
+        </div>
 
-<span class="k">$</span> open <a href="https://scholar.google.com/citations?user=APUSJ6UAAAAJ&amp;hl=en" target="_blank" rel="noopener">scholar.google.com/citations?user=APUSJ6UAAAAJ</a>
-</pre>
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">2011</span><span class="pub-title">Mobile visual location recognition</span><span class="pub-cites">★ 153</span></div>
+          <div class="pub-authors">G Schroth, R Huitl, D Chen, M Abu-Alqumsan, <b>A Al-Nuaimi</b>, E Steinbach</div>
+          <div class="pub-venue">IEEE Signal Processing Magazine</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">—</span><span class="pub-title">Point Cloud-based Model-mediated Teleoperation with Dynamic and Perception-based Model Updating</span><span class="pub-cites">★ 89</span></div>
+          <div class="pub-authors">X Xu, B Cizmeci, <b>A Al-Nuaimi</b>, E Steinbach</div>
+          <div class="pub-venue">—</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">2016</span><span class="pub-title">Geometric-Algebra LMS Adaptive Filter and its Application to Rotation Estimation</span><span class="pub-cites">★ 41</span></div>
+          <div class="pub-authors">WB Lopes, <b>A Al-Nuaimi</b>, CG Lopes</div>
+          <div class="pub-venue">IEEE Signal Processing Letters</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">2016</span><span class="pub-title">Analyzing LiDAR scan skewing and its impact on scan matching</span><span class="pub-cites">★ 28</span></div>
+          <div class="pub-authors"><b>A Al-Nuaimi</b>, W Lopes, P Zeller, A Garcea, C Lopes, E Steinbach</div>
+          <div class="pub-venue">International Conference on Indoor Positioning and Indoor Navigation (IPIN)</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">2016</span><span class="pub-title">6DOF point cloud alignment using geometric algebra-based adaptive filtering</span><span class="pub-cites">★ 28</span></div>
+          <div class="pub-authors"><b>A Al-Nuaimi</b>, E Steinbach, WB Lopes, CG Lopes</div>
+          <div class="pub-venue">IEEE Winter Conference on Applications of Computer Vision (WACV)</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">2013</span><span class="pub-title">Performance comparison of various feature detector-descriptor combinations for content-based image retrieval with JPEG-encoded query images</span><span class="pub-cites">★ 28</span></div>
+          <div class="pub-authors">J Chao, <b>A Al-Nuaimi</b>, G Schroth, E Steinbach</div>
+          <div class="pub-venue">IEEE 15th International Workshop on Multimedia Signal Processing</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">2017</span><span class="pub-title">Visual localization method</span><span class="pub-cites">★ 27</span></div>
+          <div class="pub-authors">E Steinbach, G Schroth, M Abu-Alqumsan, R Huitl, <b>A Al-Nuaimi</b></div>
+          <div class="pub-venue">US Patent 9,641,981</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">2011</span><span class="pub-title">Rapid image retrieval for mobile location recognition</span><span class="pub-cites">★ 21</span></div>
+          <div class="pub-authors">G Schroth, <b>A Al-Nuaimi</b>, R Huitl, F Schweiger, E Steinbach</div>
+          <div class="pub-venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">2012</span><span class="pub-title">Fully automatic and frame-accurate video synchronization using bitrate sequences</span><span class="pub-cites">★ 11</span></div>
+          <div class="pub-authors">F Schweiger, G Schroth, M Eichhorn, <b>A Al-Nuaimi</b>, B Cizmeci, M Fahrmair</div>
+          <div class="pub-venue">IEEE Transactions on Multimedia</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">2012</span><span class="pub-title">Seamless and efficient stream switching of multi-perspective videos</span><span class="pub-cites">★ 10</span></div>
+          <div class="pub-authors">H Zhang, <b>A Al-Nuaimi</b>, X Gu, M Fahrmair, R Ishibashi</div>
+          <div class="pub-venue">International Packet Video Workshop</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">2017</span><span class="pub-title">Methods of Point Cloud Alignment with Applications to 3D Indoor Mapping and Localization</span><span class="pub-cites">★ 7</span></div>
+          <div class="pub-authors"><b>A Al-Nuaimi</b></div>
+          <div class="pub-venue">PhD Dissertation · Technische Universität München</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-head"><span class="pub-year">2015</span><span class="pub-title">Indoor location retrieval using shape matching of KinectFusion scans to large-scale indoor point clouds</span><span class="pub-cites">★ 7</span></div>
+          <div class="pub-authors"><b>A Al-Nuaimi</b>, M Piccolrovazzi, S Gedikli, E Steinbach, G Schroth</div>
+          <div class="pub-venue">Eurographics Workshop on 3D Object Retrieval</div>
+        </div>
+      </div>
     </section>
 
     <section id="repos" class="block hidden" data-cmd="git log --repos">
       <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~</span>$ git log --oneline --all --repos</p>
+      <pre class="output disclaimer">
+<span class="k">[!]</span> <span class="b">disclaimer</span>: most of the code I write lives behind corporate firewalls
+    and is highly protected — there is little public code to show here.
+    The list below is what GitHub exposes; the real work is elsewhere.
+</pre>
       <pre id="repos-list" class="output">loading...</pre>
     </section>
 
