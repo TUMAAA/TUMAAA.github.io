@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>~/anas — al-nuaimi</title>
+<meta name="description" content="Anas Al-Nuaimi — ML researcher & engineer. Computer vision, generative AI, robotics." />
+<meta name="theme-color" content="#0a0e0a" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0e0a'/%3E%3Ctext x='8' y='44' font-family='monospace' font-size='36' fill='%2300ff88'%3E%26gt;_%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="crt-flicker" aria-hidden="true"></div>
+
+<main class="terminal" role="main">
+  <header class="term-bar">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+    <span class="title">anas@fanar:~ — zsh — 120x40</span>
+  </header>
+
+  <section class="term-body">
+    <pre class="ascii" aria-hidden="true">
+   ___   _   _    _    ___    ___ ___    _ _   _ _   _    _   ___ __  __ ___
+  / __| /_\ | \  /_\  / __|  | _ \ _ \  /_| | (_) \ | |  /_\ |_ _|  \/  |_ _|
+ | (__ / _ \| |\/ _ \ \__ \  |  _/   / / _ \ |/| |  \| | / _ \ | || |\/| || |
+  \___/_/ \_\_|/_/ \_\|___/  |_| |_|_\/_/ \_\__|_|_|\_| /_/ \_\___|_|  |_|___|
+</pre>
+
+    <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~</span>$ <span id="typed"></span><span class="cursor">▌</span></p>
+
+    <pre id="whoami-output" class="output hidden">
+<span class="k">name</span>        : Anas Al-Nuaimi
+<span class="k">role</span>        : ML Researcher / Engineer
+<span class="k">domains</span>     : computer vision · generative AI · robotics · MLOps
+<span class="k">stack</span>       : Python · PyTorch · CUDA · Airflow · SLURM · C++
+<span class="k">currently</span>   : building large-scale image-gen pipelines @ Fanar
+<span class="k">contact</span>     : <a href="mailto:analnuaimi@hbku.edu.qa">analnuaimi@hbku.edu.qa</a>
+
+<span class="k">socials</span>     :
+  ├── github     <a href="https://github.com/TUMAAA" target="_blank" rel="noopener">github.com/TUMAAA</a>
+  ├── linkedin   <a href="https://www.linkedin.com/in/anasaa/" target="_blank" rel="noopener">linkedin.com/in/anasaa</a>
+  ├── scholar    <a href="https://scholar.google.com/citations?user=APUSJ6UAAAAJ&amp;hl=en" target="_blank" rel="noopener">scholar.google.com/anasaa</a>
+  └── medium     <a href="https://medium.com/@anas.alnuaimi" target="_blank" rel="noopener">medium.com/@anas.alnuaimi</a>
+</pre>
+
+    <nav class="cmds" aria-label="commands">
+      <button data-cmd="cat about.md">cat about.md</button>
+      <button data-cmd="ls publications/">ls publications/</button>
+      <button data-cmd="git log --repos">git log --repos</button>
+      <button data-cmd="cat blog.rss">cat blog.rss</button>
+      <button data-cmd="./contact.sh">./contact.sh</button>
+    </nav>
+
+    <section id="about" class="block hidden" data-cmd="cat about.md">
+      <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~</span>$ cat about.md</p>
+<pre class="md output">
+<span class="h"># About</span>
+
+I build systems that turn pixels into intelligence — and intelligence back into
+pixels. My day-to-day is somewhere between research code, GPU clusters, and
+production data pipelines.
+
+<span class="h">## what I work on</span>
+
+- <span class="b">Generative models</span> — fine-tuning &amp; deploying diffusion models (FLUX, SD, SDXL)
+  with LoRA, evaluating them with VLM judges, and shipping the whole loop on
+  SLURM + Airflow.
+- <span class="b">Computer vision &amp; robotics</span> — past life in dense visual odometry, SLAM,
+  and 3D reconstruction. I still write a lot of CUDA when no one is looking.
+- <span class="b">MLOps at scale</span> — content-addressed dataset stores, deduplication,
+  reproducible runs, and pipelines that don&apos;t fall over at 3 a.m.
+
+<span class="h">## philosophy</span>
+
+> If you can&apos;t reproduce it, you didn&apos;t do it.
+
+I like small, sharp tools, plain text, and READMEs that respect your time.
+</pre>
+    </section>
+
+    <section id="publications" class="block hidden" data-cmd="ls publications/">
+      <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~/publications</span>$ ls -la</p>
+      <p class="badges">
+        <img alt="citations" src="https://img.shields.io/badge/dynamic/json?label=citations&query=%24.citations&url=https%3A%2F%2Fapi.allorigins.win%2Fget%3Furl%3Dhttps%253A%252F%252Fscholar.google.com%252Fcitations%253Fuser%253DAPUSJ6UAAAAJ&color=00ff88&style=flat-square&logo=googlescholar" onerror="this.style.display='none'"/>
+        <a href="https://scholar.google.com/citations?user=APUSJ6UAAAAJ&hl=en" target="_blank" rel="noopener"><img alt="google scholar" src="https://img.shields.io/badge/Google%20Scholar-APUSJ6UAAAAJ-00ff88?style=flat-square&logo=googlescholar&logoColor=black"/></a>
+      </p>
+      <pre id="publications-list" class="output">
+<span class="muted">// Google Scholar blocks CORS, so the live list lives on the profile itself.</span>
+<span class="muted">// Hit the badge above to open the canonical, always-current list.</span>
+
+<span class="k">$</span> open <a href="https://scholar.google.com/citations?user=APUSJ6UAAAAJ&amp;hl=en" target="_blank" rel="noopener">scholar.google.com/citations?user=APUSJ6UAAAAJ</a>
+</pre>
+    </section>
+
+    <section id="repos" class="block hidden" data-cmd="git log --repos">
+      <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~</span>$ git log --oneline --all --repos</p>
+      <pre id="repos-list" class="output">loading...</pre>
+    </section>
+
+    <section id="blog" class="block hidden" data-cmd="cat blog.rss">
+      <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~</span>$ curl -s https://medium.com/@anas.alnuaimi/feed | xmllint --xpath '//item' -</p>
+      <pre id="blog-list" class="output">loading...</pre>
+    </section>
+
+    <section id="contact" class="block hidden" data-cmd="./contact.sh">
+      <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~</span>$ ./contact.sh</p>
+<pre class="output">
+<span class="k">[+]</span> resolving channels...
+<span class="k">[+]</span> handshake established. you have 4 vectors:
+
+    ┌─ email     → <a href="mailto:analnuaimi@hbku.edu.qa">analnuaimi@hbku.edu.qa</a>
+    ├─ github    → <a href="https://github.com/TUMAAA" target="_blank" rel="noopener">@TUMAAA</a>
+    ├─ linkedin  → <a href="https://www.linkedin.com/in/anasaa/" target="_blank" rel="noopener">/in/anasaa</a>
+    └─ medium    → <a href="https://medium.com/@anas.alnuaimi" target="_blank" rel="noopener">@anas.alnuaimi</a>
+
+<span class="k">[✓]</span> ready for incoming packets.
+</pre>
+    </section>
+
+    <p class="line footer-line"><span class="prompt">anas@fanar</span>:<span class="path">~</span>$ <span class="cursor">▌</span></p>
+  </section>
+
+  <footer class="term-foot">
+    <span>built with <span class="hl">vim</span>, <span class="hl">make</span>, and a healthy disrespect for frameworks</span>
+    <span>· <a href="https://github.com/TUMAAA/TUMAAA.github.io" target="_blank" rel="noopener">source</a></span>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
