@@ -18,19 +18,25 @@
   };
   setTimeout(typeStep, 400);
 
+  function activate(cmd) {
+    buttons.forEach((b) => b.classList.toggle("active", b.dataset.cmd === cmd));
+    blocks.forEach((b) => b.classList.toggle("hidden", b.dataset.cmd !== cmd));
+    const target = [...blocks].find((b) => b.dataset.cmd === cmd);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (cmd === "git log --repos") loadRepos();
+      if (cmd === "cat blog.rss") loadMedium();
+    }
+  }
+
   buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const cmd = btn.dataset.cmd;
-      buttons.forEach((b) => b.classList.toggle("active", b === btn));
-      blocks.forEach((b) => {
-        b.classList.toggle("hidden", b.dataset.cmd !== cmd);
-      });
-      const target = [...blocks].find((b) => b.dataset.cmd === cmd);
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-        if (cmd === "git log --repos") loadRepos();
-        if (cmd === "cat blog.rss") loadMedium();
-      }
+    btn.addEventListener("click", () => activate(btn.dataset.cmd));
+  });
+
+  document.querySelectorAll("a[data-jump]").forEach((a) => {
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      activate(a.dataset.jump);
     });
   });
 

@@ -28,15 +28,15 @@
  / _ \| ' \/ _` (_-&lt;  / _ \| |___| .` | || / _` | | '  \| |
 /_/ \_\_||_\__,_/__/ /_/ \_\_|   |_|\_|\_,_\__,_|_|_|_|_|_|
 </pre>
-    <p class="ar-name" dir="rtl" lang="ar">أنس النعيمين</p>
+    <p class="ar-name" dir="rtl" lang="ar">أنس النعيمي</p>
 
     <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~</span>$ <span id="typed"></span><span class="cursor">▌</span></p>
 
     <pre id="whoami-output" class="output hidden">
-<span class="k">name</span>        : Anas Al-Nuaimi  ·  <span class="ar-inline" dir="rtl" lang="ar">أنس النعيمين</span>
+<span class="k">name</span>        : Anas Al-Nuaimi  ·  <span class="ar-inline" dir="rtl" lang="ar">أنس النعيمي</span>
 <span class="k">role</span>        : Research Associate → hardcore Software/Data Engineer → Scientist
 <span class="k">domains</span>     : MLOps · (3D) computer vision · generative AI
-<span class="k">stack</span>       : Python · PyTorch · CUDA · Airflow · SLURM · C++
+<span class="k">stack</span>       : Python · Scala · C++  ·  <span class="muted">full chain →</span> <a href="#stack" data-jump="./stack.sh">./stack.sh</a>
 <span class="k">currently</span>   : architecting the MLOps of Fanar Arabic GenAI
 <span class="k">contact</span>     : <a href="mailto:analnuaimi@hbku.edu.qa">analnuaimi@hbku.edu.qa</a>
 
@@ -49,6 +49,7 @@
 
     <nav class="cmds" aria-label="commands">
       <button data-cmd="cat about.md">cat about.md</button>
+      <button data-cmd="./stack.sh">./stack.sh</button>
       <button data-cmd="ls publications/">ls publications/</button>
       <button data-cmd="git log --repos">git log --repos</button>
       <button data-cmd="cat blog.rss">cat blog.rss</button>
@@ -84,6 +85,37 @@ I like clear terminology, people who look at code as the outcome of
 <span class="b">Software Engineering</span> — not "coding" or "programming" — and people who
 don't consider science a source for fame but rather a mission to deliver
 societal impact.
+</pre>
+    </section>
+
+    <section id="stack" class="block hidden" data-cmd="./stack.sh">
+      <p class="line"><span class="prompt">anas@fanar</span>:<span class="path">~</span>$ ./stack.sh</p>
+<pre class="output stack-out">
+<span class="k">[+]</span> resolving toolchain...
+<span class="k">[+]</span> 5 layers loaded · 0 errors · <span class="muted">YMMV</span>
+
+<span class="h">== Programming Languages ==</span>  <span class="muted">// as long as it still matters</span>
+   <span class="b">Python</span>  ·  <span class="b">Scala</span>  ·  <span class="b">C++</span>
+
+   <span class="muted">// also did C# once upon a time, but Claude beats me to it 100×  ;(</span>
+   <span class="muted">// there was a time when I considered Matlab a <i>programming</i> language</span>
+   <span class="muted">//   (feeling ashamed). It is nonetheless a super powerful engineering tool.</span>
+
+<span class="h">== Orchestration ==</span>
+   pipeline frameworks   : <span class="b">Airflow</span> · <span class="b">Kubeflow</span> · <span class="b">AWS Step Functions</span>
+   containers / cluster  : <span class="b">Kubernetes</span> · <span class="b">SLURM</span>
+
+<span class="h">== Databases ==</span>
+   <span class="b">PostgreSQL</span> · <span class="b">SQLite</span> · <span class="b">Elasticsearch</span> · <span class="b">OpenSearch</span> · <span class="b">AWS RDS / DynamoDB</span>
+
+<span class="h">== DevOps ==</span>
+   CI / CD     : <span class="b">Zuul CI</span> · <span class="b">Jenkins</span>
+   deployment  : <span class="b">Docker</span> · <span class="b">Ansible</span>
+
+<span class="h">== Big Data ==</span>
+   <span class="b">Spark</span> · <span class="b">HDFS</span> · <span class="b">MapR</span>
+
+<span class="k">[✓]</span> stack initialized. mount points ready.
 </pre>
     </section>
 
