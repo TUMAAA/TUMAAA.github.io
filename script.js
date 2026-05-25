@@ -1,5 +1,13 @@
 // boot sequence: type "whoami", reveal output, wire up commands
 (() => {
+  // ---- centrally-tunable bits ------------------------------------------
+  const HOST = "fanar";
+  document.querySelectorAll(".host").forEach((el) => (el.textContent = HOST));
+  document.querySelectorAll(".term-bar .title").forEach((el) => {
+    el.textContent = el.textContent.replace(/anas@[^:]+/, "anas@" + HOST);
+  });
+  // ----------------------------------------------------------------------
+
   const typed = document.getElementById("typed");
   const whoami = document.getElementById("whoami-output");
   const buttons = document.querySelectorAll(".cmds button");
