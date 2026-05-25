@@ -210,18 +210,42 @@ a:hover { border-bottom-color: var(--green); color: #5eff9f; }
 .pub:last-child { border-bottom: none; }
 .pub-fig {
   width: 72px;
-  height: 72px;
+  height: 86px;
   color: var(--green);
   border: 1px solid #1f3a28;
   border-radius: 4px;
   background: #0a120c;
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  filter: drop-shadow(0 0 6px #00ff8833);
+  overflow: hidden;
+}
+.pub-icon {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0 0 6px #00ff8833);
+  padding: 6px;
+  min-height: 0;
 }
-.pub-fig svg { width: 100%; height: 100%; display: block; }
+.pub-icon svg { width: 100%; height: 100%; display: block; }
+.pub-type {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: var(--amber);
+  text-align: center;
+  padding: 3px 2px;
+  border-top: 1px dashed #1f3a28;
+  background: #100c06;
+  text-transform: uppercase;
+}
+.pub-type[data-t="journal"]      { color: var(--green); background: #0b1a0f; }
+.pub-type[data-t="conference"]   { color: var(--amber); }
+.pub-type[data-t="workshop"]     { color: var(--blue);  }
+.pub-type[data-t="patent"]       { color: #ff9eb5; background: #1a0c11; }
+.pub-type[data-t="dissertation"] { color: #d8ffe6; background: #0c2014; }
 .pub-main { min-width: 0; }
 .pub-head {
   display: grid;
@@ -245,8 +269,10 @@ a:hover { border-bottom-color: var(--green); color: #5eff9f; }
 }
 
 @media (max-width: 560px) {
-  .pub { grid-template-columns: 56px 1fr; gap: 10px; }
-  .pub-fig { width: 50px; height: 50px; padding: 3px; }
+  .pub { grid-template-columns: 60px 1fr; gap: 10px; }
+  .pub-fig { width: 56px; height: 72px; }
+  .pub-icon { padding: 4px; }
+  .pub-type { font-size: 7.5px; letter-spacing: 0.8px; }
   .pub-head { grid-template-columns: 44px 1fr auto; gap: 6px; }
 }
 
